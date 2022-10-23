@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+}
+
+
+/* sidebar */
+.sidebar {
+  background-image: url("background-image.jpg");
+  background-size: cover;
+  width: 40vw;
+  height: 100vh;
+}
+
+/* title */
+.title {
+  margin: 25vh 0;
+  padding: 10% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0.6);
+  color: white;
+}
+
+img.icon {
+  width: 20%;
+}
+
+h1.label {
+  font-size: 3vw;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* credit paragraph */
+div.image-credit {
+  position: absolute;
+  bottom: 1vh;
+  left: 1vw;
+  width: 100%;
+}
+
+p.credit {
+  color: white;
+  font-style: italic;
+  margin-left: auto;
+  font-size: 0.9vw;
+}
+
+a.link-credit {
+  color: lightgray;
+}
+
+a.link-credit:hover {
+  color: whitesmoke;
+}
+
+/* form section */
+.main {
+  width: 60vw;
+  background-color: #EFEFEF;
+  height: 100vh;
+}
+
+/* introductory paragraph */
+div.explanation {
+  height: 33vh;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+p.reason {
+  font-size: max(1.5vw, 16px);
+  line-height: 1.5;
+}
+
+p.action {
+  font-size: max(2vw, 24px);
+}
+
+/* form */
+form {
+  height: 67vh;
+}
+
+fieldset.info {
+  height: 33vh;
+  padding: 5vh 5vw;
+  background-color: white;
+  box-shadow: 2px #EEE;
+}
