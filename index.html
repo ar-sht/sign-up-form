@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Sign Up</title>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
       <div class="title">
-        <img class="icon" src="church.png">
+        <img class="icon" src="church.png" alt="church picture">
         <h1 class="label">Italian Church Club</h1>
       </div>
       <div class="image-credit">
@@ -21,13 +25,57 @@
     </div>
     <section class="main">
       <div class="explanation">
-        <p class="reason">Some lengthy written thing: Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit eos quae. Perspiciatis iste temporibus recusandae ipsa, excepturi iure, dicta, voluptatum molestias enim error repellat nihil nesciunt numquam nisi pariatur!</p>
-        <p class="action">Final call to action!</p>
+        <p class="reason">Have you been to Italy? If so, screw you! If not, join our <em>Italian church support group</em>. We look at pictures on the internet and send out a weekly newsletter with more information on exactly what we're missing out on, not being in Italy.</p>
+        <p class="action">Join the club!</p>
       </div>
       <div class="form">
         <form action="" method="post">
           <fieldset class="info">
-            <legend>Sign up now!</legend>
+            <p class="legend">Sign up to join our growing community of church viewers:</p>
+            <div class="row first">
+              <div class="input">
+                <label for="first-name">First Name</label>
+                <input name="first-name" type="text" id="first-name" required>
+              </div>
+              
+              <div class="input">
+                <label for="last-name">Last Name</label>
+                <input name="last-name" type="text" id="last-name" required>
+              </div>
+            </div>
+
+            <div class="row second">
+              <div class="input">
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" required>
+              </div>
+              
+              <div class="input">
+                <label for="phone">Phone Number</label>
+                <input name="phone" type="tel" id="phone">
+              </div>
+            </div>
+
+            <div class="row third">
+              <div class="input">
+                <label for="first-password">Password</label>
+                <input name="password" type="password" id="first-password" required>
+                <p id="error-text"></p>
+              </div>
+
+              <div class="input">
+                <label for="second-password">Confirm Password</label>
+                <input type="password" name="confirmed-password" id="second-password" required>
+              </div>
+            </div>
+            <label for="newsletter" class="check">Join the newsletter?</label>
+            <input type="checkbox" name="newsletter" id="newsletter" checked>
+          </fieldset>
+          <fieldset class="submit">
+            <div class="sign-up">
+              <button type="submit" id="submit">Create Account</button>
+              <p class="account">Already have an account? <a class="log-in" href="#">Log in</a></p>
+            </div>
           </fieldset>
         </form>
       </div>

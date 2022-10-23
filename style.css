@@ -1,7 +1,7 @@
 .container {
   display: flex;
+  background-color: #EFEFEF;
 }
-
 
 /* sidebar */
 .sidebar {
@@ -9,11 +9,12 @@
   background-size: cover;
   width: 40vw;
   height: 100vh;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* title */
 .title {
-  margin: 25vh 0;
+  margin: 40% 0;
   padding: 10% 5%;
   display: flex;
   align-items: center;
@@ -24,11 +25,12 @@
 
 img.icon {
   width: 20%;
+  margin-right: 3%;
 }
 
 h1.label {
-  font-size: 3vw;
-  font-weight: 800;
+  font-size: 3.5vw;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -45,6 +47,7 @@ p.credit {
   font-style: italic;
   margin-left: auto;
   font-size: 0.9vw;
+  font-family: 'Dosis', sans-serif;
 }
 
 a.link-credit {
@@ -59,35 +62,151 @@ a.link-credit:hover {
 .main {
   width: 60vw;
   background-color: #EFEFEF;
-  height: 100vh;
+  height: 100%;
 }
 
 /* introductory paragraph */
 div.explanation {
-  height: 33vh;
+  height: 33%;
   padding: 5vh 5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-family: 'PT Serif', serif;
 }
 
 p.reason {
   font-size: max(1.5vw, 16px);
   line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+em {
+  font-style: italic;
 }
 
 p.action {
   font-size: max(2vw, 24px);
+  font-weight: bold;
 }
 
 /* form */
-form {
-  height: 67vh;
-}
 
+/* user information */
 fieldset.info {
-  height: 33vh;
+  height: 50%;
   padding: 5vh 5vw;
   background-color: white;
-  box-shadow: 2px #EEE;
+  box-shadow: 0 0.5vh 5px #DDD;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* title */
+fieldset.info p.legend {
+  font-family: 'PT Serif', serif;
+  font-size: max(1.5vw, 24px);
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+/* formatting layout to look pretty */
+fieldset.info div.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 40%;
+  height: 30%;
+  margin: 1vh 0;
+}
+
+/* styling text */
+label {
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  letter-spacing: 0.25vw;
+}
+
+/* styling input based on stuff */
+input {
+  width: 70%;
+  padding: 2% 2%;
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  font-size: max(1vw, 12px);
+}
+
+input#newsletter {
+  margin-top: 2%;
+  transform: scale(150%);
+  accent-color: #8d794f;
+  border: none;
+  width: min-content;
+  margin-left: 4%;
+}
+
+input:invalid:not:required {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid #4f7df2;
+  box-shadow: 2px 2px 4px #DDD;
+}
+
+#error-text {
+  margin-top: 1vh;
+}
+
+/* submission bit */
+div.sign-up {
+  padding: 3vh 5vw;
+}
+
+button#submit {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75vmax;
+  padding: 2vh 2vw;
+  color: white;
+  border-bottom: 2px solid rgba(100, 81, 46, 0.4);
+  border-right:  2px solid rgba(100, 81, 46, 0.4);
+  border-top: 1px solid rgba(224, 203, 174, 0.4);
+  border-left: 1px solid rgba(224, 203, 174, 0.4);
+  border-radius: 4%;
+  background: linear-gradient(to bottom right, #c6b080, #65522b);
+  margin-bottom: 3vh;
+  box-shadow: 4px 4px 4px #83776f;
+}
+
+button#submit:hover {
+  background: linear-gradient(to bottom right, #dec8a3, #816b42);
+  cursor: pointer;
+}
+
+button#submit:active {
+  margin-top: 4px;
+  margin-left: 4px;
+  box-shadow: none;
+}
+
+p.account {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5vmax;
+}
+
+a.log-in {
+  color: #816b42;
+  font-weight: 600;
+}
+
+a.log-in:hover {
+  color: #5d4927;
+  text-decoration: none;
+  transition: all 0.2s;
 }
